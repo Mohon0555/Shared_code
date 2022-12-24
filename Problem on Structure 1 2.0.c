@@ -6,8 +6,29 @@ struct Student
     char Name[20];
     int ID;
     int Marks;
-    char mname[50];
 };
+
+void findMaxMin(struct Student S[], int n)
+{
+int i;
+int max = S[0].Marks;
+int min = S[0].Marks;
+int maxIndex, minIndex;
+for (i = 1; i < n; i++) {
+if (S[i].Marks > max) {
+max = S[i].Marks;
+maxIndex = i;
+}
+if (S[i].Marks < min) {
+min = S[i].Marks;
+minIndex = i;
+}
+}
+printf("Student with Maximum Marks : %s\n",
+S[maxIndex].Name);
+printf("Student with Minimum Marks : %s\n",
+S[minIndex].Name);
+}
 
 int main()
 {
@@ -77,8 +98,7 @@ int main()
         }
     }
 
-    printf("Max name is: %s \n", mname);
-    printf("Min is %d \n", min);
+void findMaxMin();
 
     return 0;
 }
