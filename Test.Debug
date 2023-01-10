@@ -7,3 +7,4 @@ On the Parameters & Arguments tab, click borrower and Edit Value.
 In the Edit Parameter Value view, ensure that the Expression value is selected and enter the following text:
         new miniloan.Borrower("Joe", 600, 8000)
 
+Close or press OK
