@@ -1,9 +1,2 @@
 **Test Rules**
-In the Eclipse menu bar, click Run > Run Configurations.
-Right-click Decision Operation and click New.
-In the Name field, enter Miniloan Test for the name of the launch configuration.
-To set the decision operation, browse to my decision service/my operation, and click OK.
-On the Parameters & Arguments tab, click borrower and Edit Value.
-In the Edit Parameter Value view, ensure that the Expression value is selected and enter the following text:
-        new miniloan.Borrower("Joe", 600, 8000)
-
+##Input Data
